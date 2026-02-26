@@ -10,7 +10,7 @@ body {
    justify-content: center;
    align-items: center;
    min-height: 900px;
-   background-image: url(/img/Landscape.png);
+   background-image: url(images/Landscape.png);
    background-size: cover;
    background-position: center; 
 }
