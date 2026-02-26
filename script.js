@@ -8,25 +8,25 @@ loginForm.addEventListener('submit', function(event) {
     const password = document.getElementById('password').value;
 
     if (username === "test" && password === "1234") {
-        // 1. Dölj formuläret
+        //Döljer formuläret
         loginForm.style.display = 'none';
         
-        // 2. Visa välkomstmeddelandet
+        //Visar välkomstmeddelandet
         welcomeMessage.style.display = 'block';
     } else {
         alert("Fel uppgifter!");
     }
 });
 
-// Logga ut-logik
+//Logga ut-logik
 logoutBtn.addEventListener('click', function() {
-    // 1. Visa formuläret igen
+    //Visar formuläret igen
     loginForm.style.display = 'block';
     
-    // 2. Dölj välkomstmeddelandet
+    //Döljer välkomstmeddelandet
     welcomeMessage.style.display = 'none';
     
-    // 3. Töm textfälten (så nästa person inte ser ditt lösenord)
+   
     document.getElementById('username').value = '';
     document.getElementById('password').value = '';
 });
